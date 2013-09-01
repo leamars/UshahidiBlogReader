@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B338FBD17D385CB004F4A47 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B338FBC17D385CB004F4A47 /* UIKit.framework */; };
+		8B338FBF17D385CB004F4A47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B338FBE17D385CB004F4A47 /* Foundation.framework */; };
+		8B338FC117D385CB004F4A47 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B338FC017D385CB004F4A47 /* CoreGraphics.framework */; };
+		8B338FC717D385CB004F4A47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FC517D385CB004F4A47 /* InfoPlist.strings */; };
+		8B338FC917D385CB004F4A47 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FC817D385CB004F4A47 /* main.m */; };
+		8B338FCD17D385CB004F4A47 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FCC17D385CB004F4A47 /* AppDelegate.m */; };
+		8B338FCF17D385CB004F4A47 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FCE17D385CB004F4A47 /* Default.png */; };
+		8B338FD117D385CB004F4A47 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FD017D385CB004F4A47 /* Default@2x.png */; };
+		8B338FD317D385CB004F4A47 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FD217D385CB004F4A47 /* Default-568h@2x.png */; };
+		8B338FDA17D385F4004F4A47 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FD917D385F4004F4A47 /* MainStoryboard.storyboard */; };
+		8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDC17D3861B004F4A47 /* TableViewController.m */; };
+		8B338FE017D3870C004F4A47 /* Incident.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDF17D3870C004F4A47 /* Incident.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B338FB917D385CB004F4A47 /* UshahidiBlogReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UshahidiBlogReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B338FBC17D385CB004F4A47 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8B338FBE17D385CB004F4A47 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B338FC017D385CB004F4A47 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8B338FC417D385CB004F4A47 /* UshahidiBlogReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UshahidiBlogReader-Info.plist"; sourceTree = "<group>"; };
+		8B338FC617D385CB004F4A47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B338FC817D385CB004F4A47 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B338FCA17D385CB004F4A47 /* UshahidiBlogReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UshahidiBlogReader-Prefix.pch"; sourceTree = "<group>"; };
+		8B338FCB17D385CB004F4A47 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8B338FCC17D385CB004F4A47 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B338FCE17D385CB004F4A47 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8B338FD017D385CB004F4A47 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8B338FD217D385CB004F4A47 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8B338FD917D385F4004F4A47 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8B338FDB17D3861B004F4A47 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		8B338FDC17D3861B004F4A47 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		8B338FDE17D3870C004F4A47 /* Incident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Incident.h; sourceTree = "<group>"; };
+		8B338FDF17D3870C004F4A47 /* Incident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Incident.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B338FB617D385CB004F4A47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B338FBD17D385CB004F4A47 /* UIKit.framework in Frameworks */,
+				8B338FBF17D385CB004F4A47 /* Foundation.framework in Frameworks */,
+				8B338FC117D385CB004F4A47 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B338FB017D385CB004F4A47 = {
+			isa = PBXGroup;
+			children = (
+				8B338FC217D385CB004F4A47 /* UshahidiBlogReader */,
+				8B338FBB17D385CB004F4A47 /* Frameworks */,
+				8B338FBA17D385CB004F4A47 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B338FBA17D385CB004F4A47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B338FB917D385CB004F4A47 /* UshahidiBlogReader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B338FBB17D385CB004F4A47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B338FBC17D385CB004F4A47 /* UIKit.framework */,
+				8B338FBE17D385CB004F4A47 /* Foundation.framework */,
+				8B338FC017D385CB004F4A47 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B338FC217D385CB004F4A47 /* UshahidiBlogReader */ = {
+			isa = PBXGroup;
+			children = (
+				8B338FCB17D385CB004F4A47 /* AppDelegate.h */,
+				8B338FCC17D385CB004F4A47 /* AppDelegate.m */,
+				8B338FC317D385CB004F4A47 /* Supporting Files */,
+				8B338FD917D385F4004F4A47 /* MainStoryboard.storyboard */,
+				8B338FDB17D3861B004F4A47 /* TableViewController.h */,
+				8B338FDC17D3861B004F4A47 /* TableViewController.m */,
+				8B338FDE17D3870C004F4A47 /* Incident.h */,
+				8B338FDF17D3870C004F4A47 /* Incident.m */,
+			);
+			path = UshahidiBlogReader;
+			sourceTree = "<group>";
+		};
+		8B338FC317D385CB004F4A47 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B338FC417D385CB004F4A47 /* UshahidiBlogReader-Info.plist */,
+				8B338FC517D385CB004F4A47 /* InfoPlist.strings */,
+				8B338FC817D385CB004F4A47 /* main.m */,
+				8B338FCA17D385CB004F4A47 /* UshahidiBlogReader-Prefix.pch */,
+				8B338FCE17D385CB004F4A47 /* Default.png */,
+				8B338FD017D385CB004F4A47 /* Default@2x.png */,
+				8B338FD217D385CB004F4A47 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B338FB817D385CB004F4A47 /* UshahidiBlogReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B338FD617D385CB004F4A47 /* Build configuration list for PBXNativeTarget "UshahidiBlogReader" */;
+			buildPhases = (
+				8B338FB517D385CB004F4A47 /* Sources */,
+				8B338FB617D385CB004F4A47 /* Frameworks */,
+				8B338FB717D385CB004F4A47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UshahidiBlogReader;
+			productName = UshahidiBlogReader;
+			productReference = 8B338FB917D385CB004F4A47 /* UshahidiBlogReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B338FB117D385CB004F4A47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Lea Marolt Sonnenschein";
+			};
+			buildConfigurationList = 8B338FB417D385CB004F4A47 /* Build configuration list for PBXProject "UshahidiBlogReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8B338FB017D385CB004F4A47;
+			productRefGroup = 8B338FBA17D385CB004F4A47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B338FB817D385CB004F4A47 /* UshahidiBlogReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B338FB717D385CB004F4A47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B338FC717D385CB004F4A47 /* InfoPlist.strings in Resources */,
+				8B338FCF17D385CB004F4A47 /* Default.png in Resources */,
+				8B338FD117D385CB004F4A47 /* Default@2x.png in Resources */,
+				8B338FD317D385CB004F4A47 /* Default-568h@2x.png in Resources */,
+				8B338FDA17D385F4004F4A47 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B338FB517D385CB004F4A47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B338FC917D385CB004F4A47 /* main.m in Sources */,
+				8B338FCD17D385CB004F4A47 /* AppDelegate.m in Sources */,
+				8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */,
+				8B338FE017D3870C004F4A47 /* Incident.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8B338FC517D385CB004F4A47 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B338FC617D385CB004F4A47 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B338FD417D385CB004F4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8B338FD517D385CB004F4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B338FD717D385CB004F4A47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UshahidiBlogReader/UshahidiBlogReader-Prefix.pch";
+				INFOPLIST_FILE = "UshahidiBlogReader/UshahidiBlogReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B338FD817D385CB004F4A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UshahidiBlogReader/UshahidiBlogReader-Prefix.pch";
+				INFOPLIST_FILE = "UshahidiBlogReader/UshahidiBlogReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B338FB417D385CB004F4A47 /* Build configuration list for PBXProject "UshahidiBlogReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B338FD417D385CB004F4A47 /* Debug */,
+				8B338FD517D385CB004F4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B338FD617D385CB004F4A47 /* Build configuration list for PBXNativeTarget "UshahidiBlogReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B338FD717D385CB004F4A47 /* Debug */,
+				8B338FD817D385CB004F4A47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B338FB117D385CB004F4A47 /* Project object */;
+}
