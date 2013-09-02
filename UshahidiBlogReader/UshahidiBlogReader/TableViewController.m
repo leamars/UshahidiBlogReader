@@ -52,6 +52,8 @@
         Incident *incident = [Incident incidentWithTitle:[[bpDictionary objectForKey:@"incident"] objectForKey:@"incidenttitle"]];
         
         incident.locationName = [[bpDictionary objectForKey:@"incident"] objectForKey:@"locationname"];
+        incident.thumbnail = [[[bpDictionary objectForKey:@"media"] objectAtIndex:0] objectForKey:@"thumb_url"];
+        incident.date = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentdate"];
         
         [self.blogPosts addObject:incident];
     }
@@ -100,7 +102,13 @@
     
     // Configure the cell...
     cell.textLabel.text = blogPost.incidentTitle;
-    cell.detailTextLabel.text = blogPost.locationName;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", blogPost.locationName, blogPost.date];
+    
+    if ([blogPost.thumbnail isKindOfClass:[NSString class]]) {
+        NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbanilURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        cell.imageView.image = image;
+    }
     
     return cell;
 }

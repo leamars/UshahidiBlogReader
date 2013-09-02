@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSString *incidentTitle;
 @property (nonatomic, strong) NSString *locationName;
+@property (nonatomic, strong) NSString *thumbnail;
+@property (nonatomic, strong) NSString *date;
 
 // Designated Initializer
 - (id) initWithIncidentTitle:(NSString *) incidentTitle;
@@ -23,5 +25,8 @@
 + (id) incidentWithTitle:(NSString *) incidentTitle;
 //- (void) setIncidentTitle:(NSString *) incidentTitle;
 //- (NSString *) incidentTitle;
+
+- (NSURL *) thumbanilURL;
+- (NSString *) formattedDate;
 
 @end

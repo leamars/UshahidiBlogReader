@@ -24,6 +24,8 @@
     
     if (self) {
         self.incidentTitle = _incidentTitle;
+        self.locationName = nil;
+        self.thumbnail = nil;
     }
     
     return self;
@@ -31,6 +33,15 @@
 
 + (id) incidentWithTitle:(NSString *) incidentTitle {
     return [[self alloc] initWithIncidentTitle:incidentTitle];
+}
+
+- (NSURL *) thumbanilURL {
+    return [NSURL URLWithString:self.thumbnail];
+}
+
+- (NSString *) formattedDate {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];
 }
 
 @end
