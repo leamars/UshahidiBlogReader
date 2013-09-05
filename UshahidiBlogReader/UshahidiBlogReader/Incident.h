@@ -17,6 +17,7 @@
 @property (nonatomic, strong) NSString *locationName;
 @property (nonatomic, strong) NSString *thumbnail;
 @property (nonatomic, strong) NSString *date;
+@property (nonatomic, strong) NSURL *url;
 
 // Designated Initializer
 - (id) initWithIncidentTitle:(NSString *) incidentTitle;

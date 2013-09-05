@@ -55,6 +55,11 @@
         incident.thumbnail = [[[bpDictionary objectForKey:@"media"] objectAtIndex:0] objectForKey:@"thumb_url"];
         incident.date = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentdate"];
         
+        NSString *incidentID = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentid"];
+        NSString *incidentURL = [NSString stringWithFormat:@"http://www.greatlakescommonsmap.org/reports/view/%@", incidentID];
+        
+        incident.url= [NSURL URLWithString:incidentURL];
+        
         [self.blogPosts addObject:incident];
     }
     
@@ -113,56 +118,25 @@
     return cell;
 }
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"Row selected %d", indexPath.row);
+    
+    /*Incident *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+    // caught instance of application
+    UIApplication *application = [UIApplication sharedApplication];
+    //----------------------------------------------------------------- OPEN URL IN DEFAULT BROWSER
+    [application openURL:blogPost.url];
+    
+    
+    
     // Navigation logic may go here. Create and push another view controller.
-    /*
+    
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
+ 
+}*/
 
 @end
