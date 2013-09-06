@@ -20,6 +20,7 @@
 		8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDC17D3861B004F4A47 /* TableViewController.m */; };
 		8B338FE017D3870C004F4A47 /* Incident.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDF17D3870C004F4A47 /* Incident.m */; };
 		8BB75A3017D9011500CD799D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB75A2F17D9011500CD799D /* WebViewController.m */; };
+		8BB75A3317D95D3B00CD799D /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB75A3217D95D3B00CD799D /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		8B338FDF17D3870C004F4A47 /* Incident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Incident.m; sourceTree = "<group>"; };
 		8BB75A2E17D9011500CD799D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		8BB75A2F17D9011500CD799D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		8BB75A3117D95D3B00CD799D /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../FirstViewController.h; sourceTree = "<group>"; };
+		8BB75A3217D95D3B00CD799D /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = ../FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 		8B338FC217D385CB004F4A47 /* UshahidiBlogReader */ = {
 			isa = PBXGroup;
 			children = (
+				8BB75A3117D95D3B00CD799D /* FirstViewController.h */,
+				8BB75A3217D95D3B00CD799D /* FirstViewController.m */,
 				8B338FCB17D385CB004F4A47 /* AppDelegate.h */,
 				8B338FCC17D385CB004F4A47 /* AppDelegate.m */,
 				8B338FC317D385CB004F4A47 /* Supporting Files */,
@@ -188,6 +193,7 @@
 				8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */,
 				8B338FE017D3870C004F4A47 /* Incident.m in Sources */,
 				8BB75A3017D9011500CD799D /* WebViewController.m in Sources */,
+				8BB75A3317D95D3B00CD799D /* FirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

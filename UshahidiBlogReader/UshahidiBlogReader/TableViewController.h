@@ -10,5 +10,6 @@
 
 @interface TableViewController : UITableViewController
 @property (nonatomic, strong) NSMutableArray *blogPosts;
+@property (nonatomic, strong) NSString *ushahidiURL;
 
 @end

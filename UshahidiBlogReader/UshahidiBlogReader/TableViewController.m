@@ -9,6 +9,7 @@
 #import "TableViewController.h"
 #import "Incident.h"
 #import "WebViewController.h"
+#import "FirstViewController.h"
 
 @interface TableViewController ()
 
@@ -34,8 +35,12 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    NSString *customURL = [NSString stringWithFormat:@"%@/api?task=incidents", self.ushahidiURL];
     
-    NSURL *blogURL = [NSURL URLWithString:@"http://www.greatlakescommonsmap.org/api?task=incidents"];
+    NSLog(@"%@", customURL);
+    
+    NSURL *blogURL = [NSURL URLWithString:customURL];
     
     NSData *jsonData = [NSData dataWithContentsOfURL:blogURL];
     
@@ -56,12 +61,13 @@
         Incident *incident = [Incident incidentWithTitle:[[bpDictionary objectForKey:@"incident"] objectForKey:@"incidenttitle"]];
         
         incident.locationName = [[bpDictionary objectForKey:@"incident"] objectForKey:@"locationname"];
+        
         incident.thumbnail = [[[bpDictionary objectForKey:@"media"] objectAtIndex:0] objectForKey:@"thumb_url"];
         
         incident.date = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentdate"];
         
         NSString *incidentID = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentid"];
-        NSString *incidentURL = [NSString stringWithFormat:@"http://www.greatlakescommonsmap.org/reports/view/%@", incidentID];
+        NSString *incidentURL = [NSString stringWithFormat:@"%@/%@", customURL, incidentID];
         
         incident.url= [NSURL URLWithString:incidentURL];
         

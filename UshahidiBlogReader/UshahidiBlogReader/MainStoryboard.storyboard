@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fzK-vK-WDZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="fUi-BS-V3A">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -47,7 +47,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fTU-hT-YCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="-17"/>
+            <point key="canvasLocation" x="579" y="-17"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="xHp-gk-D8U">
@@ -76,27 +76,119 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UKY-Gp-2Eg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="508" y="-17"/>
+            <point key="canvasLocation" x="1034" y="-17"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="UfD-Hi-o6C">
+            <objects>
+                <viewController id="y60-bZ-89f" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Em2-Da-9pT">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHg-DB-SNU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ED0-gs-lXJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Enter Ushahidi blog URL:">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="Georgia"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="enterURL" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhM-GS-CVj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="iBz-VT-1vY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Enter">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterButtonTapped:" destination="y60-bZ-89f" eventType="touchUpInside" id="toM-Cj-5QG"/>
+                                    <segue destination="C9p-3c-QAC" kind="push" identifier="toBlog" id="LZO-hk-ben"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iX1-N0-zUj">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="y60-bZ-89f" id="iC1-we-lm7"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IhM-GS-CVj" firstAttribute="top" secondItem="iX1-N0-zUj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4d3-jz-jGb"/>
+                            <constraint firstItem="IhM-GS-CVj" firstAttribute="centerX" secondItem="iX1-N0-zUj" secondAttribute="centerX" type="default" id="6yG-On-JPR"/>
+                            <constraint firstAttribute="trailing" secondItem="iX1-N0-zUj" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="EzQ-3H-Ovg"/>
+                            <constraint firstItem="iX1-N0-zUj" firstAttribute="top" secondItem="wHg-DB-SNU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="IZQ-lD-eqO"/>
+                            <constraint firstItem="iX1-N0-zUj" firstAttribute="leading" secondItem="Em2-Da-9pT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PVQ-Lv-wQQ"/>
+                            <constraint firstAttribute="trailing" secondItem="wHg-DB-SNU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="U8d-p0-O8U"/>
+                            <constraint firstItem="wHg-DB-SNU" firstAttribute="top" secondItem="Em2-Da-9pT" secondAttribute="top" constant="70" id="Ucz-1t-qo3"/>
+                            <constraint firstItem="wHg-DB-SNU" firstAttribute="leading" secondItem="Em2-Da-9pT" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XMq-pu-9ZI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zLZ-EP-FBa"/>
+                    <connections>
+                        <outlet property="enterURL" destination="IhM-GS-CVj" id="O84-yB-Kzo"/>
+                        <outlet property="textURL" destination="iX1-N0-zUj" id="rd9-lA-eGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rf0-Dx-HyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="-17"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="qt3-qU-f1f">
+        <scene sceneID="cjb-d8-AC2">
             <objects>
-                <navigationController id="fzK-vK-WDZ" sceneMemberID="viewController">
+                <navigationController id="fUi-BS-V3A" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LCO-ko-1Ez">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUQ-zg-2Qp">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="C9p-3c-QAC" kind="relationship" relationship="rootViewController" id="DMp-l4-KCr"/>
+                        <segue destination="y60-bZ-89f" kind="relationship" relationship="rootViewController" id="PeZ-cL-jsz"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="D6H-5S-f7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pCX-1q-Vl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-473" y="-17"/>
+            <point key="canvasLocation" x="-441" y="-17"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="enterButtonTapped:"/>
+                <relationship kind="outlet" name="enterURL" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textURL" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TableViewController.h"/>
+        </class>
+        <class className="WebViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WebViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
