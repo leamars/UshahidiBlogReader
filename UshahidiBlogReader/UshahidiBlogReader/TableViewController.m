@@ -8,6 +8,7 @@
 
 #import "TableViewController.h"
 #import "Incident.h"
+#import "WebViewController.h"
 
 @interface TableViewController ()
 
@@ -41,11 +42,14 @@
     NSError *error = nil;
     
     NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
-    NSLog(@"%@",dataDictionary);
     
     self.blogPosts = [NSMutableArray array];
     
     NSArray *blogPostArray = [[dataDictionary objectForKey:@"payload"] objectForKey:@"incidents"];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setDateStyle:NSDateFormatterShortStyle];
     
     for (NSDictionary *bpDictionary in blogPostArray) {
         
@@ -53,6 +57,7 @@
         
         incident.locationName = [[bpDictionary objectForKey:@"incident"] objectForKey:@"locationname"];
         incident.thumbnail = [[[bpDictionary objectForKey:@"media"] objectAtIndex:0] objectForKey:@"thumb_url"];
+        
         incident.date = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentdate"];
         
         NSString *incidentID = [[bpDictionary objectForKey:@"incident"] objectForKey:@"incidentid"];
@@ -107,7 +112,7 @@
     
     // Configure the cell...
     cell.textLabel.text = blogPost.incidentTitle;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", blogPost.locationName, blogPost.date];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@", blogPost.locationName, [blogPost formattedDate]];
     
     if ([blogPost.thumbnail isKindOfClass:[NSString class]]) {
         NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbanilURL];
@@ -138,5 +143,20 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
  
 }*/
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Preparing for seque: %@", segue.identifier);
+    
+    if ([segue.identifier isEqualToString:@"showReport"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Incident *incident = [self.blogPosts objectAtIndex:indexPath.row];
+        
+        /* ANOTHER WAY TO DO THIS:
+        WebViewController *webView = (WebViewController *)segue.destinationViewController;
+        webView.reportURL = incident.url; */
+        
+        [segue.destinationViewController setReportURL:incident.url];
+    }
+}
 
 @end

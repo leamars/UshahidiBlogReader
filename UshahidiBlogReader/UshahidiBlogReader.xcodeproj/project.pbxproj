@@ -19,6 +19,7 @@
 		8B338FDA17D385F4004F4A47 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B338FD917D385F4004F4A47 /* MainStoryboard.storyboard */; };
 		8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDC17D3861B004F4A47 /* TableViewController.m */; };
 		8B338FE017D3870C004F4A47 /* Incident.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B338FDF17D3870C004F4A47 /* Incident.m */; };
+		8BB75A3017D9011500CD799D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB75A2F17D9011500CD799D /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		8B338FDC17D3861B004F4A47 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		8B338FDE17D3870C004F4A47 /* Incident.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Incident.h; sourceTree = "<group>"; };
 		8B338FDF17D3870C004F4A47 /* Incident.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Incident.m; sourceTree = "<group>"; };
+		8BB75A2E17D9011500CD799D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		8BB75A2F17D9011500CD799D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				8B338FDC17D3861B004F4A47 /* TableViewController.m */,
 				8B338FDE17D3870C004F4A47 /* Incident.h */,
 				8B338FDF17D3870C004F4A47 /* Incident.m */,
+				8BB75A2E17D9011500CD799D /* WebViewController.h */,
+				8BB75A2F17D9011500CD799D /* WebViewController.m */,
 			);
 			path = UshahidiBlogReader;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				8B338FCD17D385CB004F4A47 /* AppDelegate.m in Sources */,
 				8B338FDD17D3861B004F4A47 /* TableViewController.m in Sources */,
 				8B338FE017D3870C004F4A47 /* Incident.m in Sources */,
+				8BB75A3017D9011500CD799D /* WebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +302,7 @@
 				8B338FD817D385CB004F4A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
